@@ -1,0 +1,249 @@
+$primaryFont: bahnschrift;
+$seconderyColor: rgb(8, 199, 135);
+* {
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  font-family: $primaryFont;
+  font-size: 14px;
+  color: rgb(46, 46, 46);
+  font-weight: 300;
+}
+.header {
+  float: left;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+  background: $seconderyColor;
+}
+.header h3 {
+  padding: 0px;
+  margin: 0px;
+  padding-top: 3px;
+  color: rgb(255, 255, 255);
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+}
+
+main {
+  float: left;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 100px;
+  margin: 0px;
+}
+.tHeader {
+  width: 100%;
+  float: left;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  float: left;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+thead,
+tbody {
+  width: 100%;
+  float: left;
+  padding: 0px;
+  margin: 0px;
+}
+thead {
+  background: rgb(15, 17, 37);
+  border-bottom: 2px solid $seconderyColor;
+  border-radius: 2px;
+}
+thead th {
+  color: white;
+  border: none;
+}
+tr,
+td,
+th {
+  width: 100%;
+  float: left;
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+tr {
+  padding: 10px 5px !important;
+  align-items: center;
+}
+tr:nth-child(even) {
+  background: rgb(247, 247, 247);
+}
+td {
+  padding: 0px 10px !important;
+  word-wrap: break-word !important;
+}
+
+.id {
+  width: 4%;
+  text-align: center;
+}
+.name {
+  width: 30%;
+}
+.email {
+  width: 34%;
+}
+.location {
+  width: 24%;
+}
+.delete {
+  width: 8%;
+  text-align: center;
+}
+.delete button {
+  border: none;
+  background: none;
+}
+
+//Registration
+.reg {
+  width: 100%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rHeader {
+  width: 100%;
+  float: left;
+  display: flex;
+  justify-content: center;
+}
+.registration {
+  width: 100%;
+  float: left;
+  padding: 10px 0px;
+  display: flex;
+  justify-content: center;
+}
+.registration form {
+  width: 50%;
+  float: left;
+}
+.registration form input {
+  width: 100%;
+  outline: none;
+  border-radius: 2px;
+  border: 1px solid grey;
+  padding: 8px 20px;
+  margin: 10px 0px;
+}
+.registration form .cFlex {
+  display: flex;
+  justify-content: space-between;
+}
+.registration form .cFlex input {
+  width: 49%;
+}
+.registration button {
+  border: none;
+  background: none;
+  padding: 8px 20px;
+  color: white;
+  background: $seconderyColor;
+  width: 100%;
+  margin: 10px 0px;
+  border-radius: 2px;
+}
+
+//Footer
+
+.footer {
+  float: left;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px;
+  background: rgb(238, 238, 238);
+}
+.footer p {
+  padding: 0px;
+  margin: 0px;
+}
+.footer span {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.footer a {
+  color: rgb(8, 199, 135);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 720px) {
+  .header {
+    padding: 10px;
+  }
+  main {
+    width: 100%;
+    display: block;
+    padding: 20px 10px;
+    margin: 0px;
+    align-items: none;
+  }
+  table {
+    width: 100% !important;
+  }
+  .reg {
+    width: 100%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+  }
+  .registration form .cFlex {
+    display: block;
+  }
+  .registration form .cFlex input {
+    width: 100%;
+  }
+  tr,
+  td,
+  th {
+    width: 100% !important;
+    float: left !important;
+    padding: 5px !important;
+    margin: 0px;
+    border: none;
+  }
+  .id {
+    text-align: left;
+  }
+  .delete {
+    text-align: left;
+    padding: 0px !important;
+  }
+  .delete button {
+    border: none;
+    background: none;
+    padding: 0px !important;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  main {
+    padding: 50px;
+    display: block;
+  }
+  .reg {
+    width: 100%;
+  }
+  table {
+    width: 100% !important;
+  }
+}
